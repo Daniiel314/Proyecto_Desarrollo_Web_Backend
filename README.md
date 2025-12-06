@@ -1,4 +1,4 @@
-# Proyecto de la materia Desarrollo Web Backend (2025-2
+# Proyecto de la materia Desarrollo Web Backend (2025-2)
 
 Este repositorio contiene la arquitectura de microservicios desarrollada para la materia de Desarrollo Web Backend. El sistema utiliza **Spring Boot** y **Spring Cloud** para gestionar la facturación, productos, autenticación y clientes de un sistema de comercio electrónico.
 
