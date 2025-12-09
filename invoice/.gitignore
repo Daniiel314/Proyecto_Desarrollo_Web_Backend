@@ -31,10 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-### Carpetas generadas por Java ###
-bin/
-
-### Archivos generados por error ###
-main
-
