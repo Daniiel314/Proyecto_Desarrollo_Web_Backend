@@ -1,0 +1,41 @@
+server:
+  port: 8081
+
+system:
+  p12FilePath: localhost.p12
+  p12PrivkPwd: DVG7tS2fcta2xj1QGPy6G1Dws/J0Su0ALxuJ+EaN3zJjXpy6K4Y=
+  p12PrivkAlias: 4gb0JWnF8fFoK1n0ykXTQxL8jPPNhJKC9qTUdLdfYZGHALbBIA==
+  hostname: Vy5aAoXEi/1RcOOsL2d4kJYxwjuvwuyHJ9eksDXwFyetwnQyZA==
+  p12FilePwd: Q5lC6wYAGQ4+BgvdBLqxRebvVv8fBcRl1Fyz5cgTKhasW0M8aTk=
+
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/dwb
+    username: root
+    password: ${DB_PASSWORD:Hola$123.,}
+
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+springdoc:
+  swagger-ui:
+    operations-sorter: method
+    default-model-expand-depth: 5
+    default-model-rendering: model
+  packagesToScan: com.unam.dwb.auth.controller
+  pathsToMatch: /**
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
